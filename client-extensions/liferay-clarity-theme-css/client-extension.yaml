@@ -4,5 +4,6 @@ assemble:
 liferay-clarity-theme-css-2:
     clayURL: css/clay.css
     mainURL: css/main.css
+    frontendTokenDefinitionJSON: src/frontend-token-definition.json
     name: Liferay Clarity Theme CSS
     type: themeCSS

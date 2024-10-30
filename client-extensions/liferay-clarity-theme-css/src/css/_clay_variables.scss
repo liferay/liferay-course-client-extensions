@@ -3,3 +3,19 @@
 @import 'classic_clay_variables';
 
 @import 'dialect/clay_variables';
+
+
+
+// Buttons
+$btn-primary-bg: var(--clay-button-primary-bg);
+$btn-primary-color: var(--clay-button-text-color);
+
+// Cards
+$card-bg: var(--clay-card-bg-color);
+$card-border-color: var(--clay-card-border-color);
+$card-title-color: var(--clay-card-title-color);
+
+
+// Fronts (Headings and Text)
+$heading-color: var(--clay-heading-color);
+$text-color: var(--clay-text-color);

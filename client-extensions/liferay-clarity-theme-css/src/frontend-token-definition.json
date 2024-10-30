@@ -1,0 +1,119 @@
+{
+	"frontendTokenCategories": [
+		{
+			"frontendTokenSets": [
+				{
+					"frontendTokens": [
+						{
+							"defaultValue": "#0b5fff",
+							"editorType": "ColorPicker",
+							"label": "Primary Button Background Color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-primary-bg"
+								}
+							],
+							"name": "btnPrimaryBgColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#ffffff",
+							"editorType": "ColorPicker",
+							"label": "Button Text Color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "btn-primary-color"
+								}
+							],
+							"name": "btnPrimaryTextColor",
+							"type": "String"
+						}
+					],
+					"label": "Buttons",
+					"name": "buttons"
+				},
+				{
+					"frontendTokens": [
+						{
+							"defaultValue": "#ffffff",
+							"editorType": "ColorPicker",
+							"label": "Card Background Color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "card-bg"
+								}
+							],
+							"name": "cardBgColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#e7e7ed",
+							"editorType": "ColorPicker",
+							"label": "Card Border Color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "card-border-color"
+								}
+							],
+							"name": "cardBorderColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#272833",
+							"editorType": "ColorPicker",
+							"label": "Card Title Color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "card-title-color"
+								}
+							],
+							"name": "cardTitleColor",
+							"type": "String"
+						}
+					],
+					"label": "Cards",
+					"name": "cards"
+				},
+				{
+					"frontendTokens": [
+						{
+							"defaultValue": "#272833",
+							"editorType": "ColorPicker",
+							"label": "Front Heading Color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "heading-color"
+								}
+							],
+							"name": "frontHeadingColor",
+							"type": "String"
+						},
+						{
+							"defaultValue": "#6b6c7e",
+							"editorType": "ColorPicker",
+							"label": "Front Text Color",
+							"mappings": [
+								{
+									"type": "cssVariable",
+									"value": "text-color"
+								}
+							],
+							"name": "frontTextColor",
+							"type": "String"
+						}
+					],
+					"label": "Fronts",
+					"name": "fronts"
+				}
+			],
+			"label": "Components",
+			"name": "components"
+		}
+	]
+}
