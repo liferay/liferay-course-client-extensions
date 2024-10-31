@@ -1,0 +1,8 @@
+assemble:
+    - from: assets
+      hashify: spritemap.svg
+      into: static
+liferay-clarity-theme-spritemap-1:
+    name: Liferay Clarity Theme Spritemap 1
+    type: themeSpritemap
+    url: spritemap.*.svg
