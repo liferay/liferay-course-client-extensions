@@ -3,8 +3,9 @@
     "workspaces": {
         "packages": [
             "client-extensions/liferay-clarity-theme-css",
+            "client-extensions/liferay-clarity-global-css-2",
             "client-extensions/liferay-clarity-global-css",
-            "client-extensions/liferay-sample-global-js",
+            "client-extensions/liferay-clarity-global-js",
             "exercises/clarity-global-css"
         ]
     }
