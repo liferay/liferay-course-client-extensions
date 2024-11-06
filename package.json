@@ -4,6 +4,7 @@
         "packages": [
             "client-extensions/liferay-clarity-theme-css",
             "client-extensions/liferay-clarity-global-css",
+            "client-extensions/liferay-clarity-my-tickets-css",
             "client-extensions/liferay-clarity-global-js",
             "client-extensions/liferay-sample-custom-element-4",
             "exercises/clarity-global-css"

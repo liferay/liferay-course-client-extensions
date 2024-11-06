@@ -1,0 +1,6 @@
+assemble:
+    - include: static/*.css
+liferay-clarity-my-ticketsl-css:
+    name: Liferay Clarity My Tickets CSS
+    type: globalCSS
+    url: global.*.css

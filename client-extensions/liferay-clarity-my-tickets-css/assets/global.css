@@ -1,0 +1,134 @@
+/* General container styles */
+.tickets-container {
+	font-family: Arial, sans-serif;
+	color: #2c3e50; /* Darker text for readability */
+	width: 90%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+/* Tab styling */
+.tabs {
+	display: flex;
+	margin-bottom: 1em;
+	justify-content: space-around;
+}
+
+.tab-button {
+	padding: 10px 20px;
+	font-size: 0.9rem;
+	cursor: pointer;
+	border: none;
+	background: #ecf0f1;
+	color: #2c3e50;
+	transition: background 0.3s;
+	border-radius: 5px;
+}
+
+.tab-button.active {
+	background: #4db6ac; /* Teal active color to match the site's style */
+	color: #fff;
+}
+
+.tab-button:hover {
+	background: #b2dfdb; /* Light teal on hover */
+}
+
+/* Ticket card styling */
+.ticket-card {
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	padding: 16px;
+	margin-bottom: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	cursor: pointer;
+	background-color: #fafafa; /* Light background for card */
+}
+
+.ticket-card:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Ticket header */
+.ticket-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Ticket subject */
+.ticket-subject {
+	font-size: 1.1rem;
+	font-weight: bold;
+	margin: 0;
+}
+
+/* Status badge with chic green palette */
+.ticket-status {
+	color: #fff;
+	padding: 4px 8px;
+	border-radius: 12px;
+	font-size: 0.85rem;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+/* Specific color styles for each priority level */
+.ticket-status.critical {
+	background-color: #8B0000; /* Dark red */
+}
+
+.ticket-status.major {
+	background-color: #556B2F; /* Olive green */
+}
+
+.ticket-status.minor {
+	background-color: #2E8B57; /* Sea green */
+}
+
+.ticket-status.moderate {
+	background-color: #3CB371; /* Medium sea green */
+}
+
+.ticket-status.unassigned {
+	background-color: #8FBC8F; /* Dark sea green */
+}
+
+/* Ticket details */
+.ticket-details {
+	margin-top: 15px;
+	padding-top: 10px;
+	border-top: 1px solid #ddd;
+	font-size: 0.9rem;
+	color: #555;
+}
+
+/* Attachment link styling */
+.ticket-attachment {
+	font-weight: bold;
+	color: #3498db; /* Teal color for attachment links */
+	text-decoration: none;
+}
+
+.ticket-attachment:hover {
+	text-decoration: underline;
+}
+
+/* Related tickets section */
+.related-tickets h4 {
+	font-weight: bold;
+	color: #2c3e50;
+	margin-top: 10px;
+}
+
+.related-ticket {
+	margin-left: 10px;
+	font-size: 0.9rem;
+	color: #666;
+}
+
+.related-ticket-item {
+	padding: 2px 0;
+}
