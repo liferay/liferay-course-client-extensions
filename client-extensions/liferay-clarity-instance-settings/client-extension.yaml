@@ -1,0 +1,10 @@
+ml-instance-settings-d5f7j8:
+    name: Master Liferay Instance Settings Fragment Service
+    pid: com.liferay.fragment.configuration.FragmentServiceConfiguration
+    propagateChanges: true
+    type: instanceSettings
+ml-instance-settings-e9b8w3:
+    name: Mastering Liferay Instance Settings Auth Login
+    pid: com.liferay.login.web.internal.configuration.AuthLoginConfiguration
+    promptEnabled: false
+    type: instanceSettings
