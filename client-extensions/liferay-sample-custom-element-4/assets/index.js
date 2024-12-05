@@ -21,119 +21,126 @@ const getCurrentUserId = async () => {
 };
 
 // Ticket component
-function Ticket({ ticket, onToggle, isOpen }) {
-	return React.createElement(
-		'div',
-		{ className: 'ticket-card', onClick: () => onToggle(ticket.id) },
-		React.createElement(
-			'div',
-			{ className: 'ticket-header' },
-			React.createElement('h3', { className: 'ticket-subject' }, ticket.subject),
-			React.createElement(
-				'span',
-				{
-					className: `ticket-status ${ticket.priority.key}`
-				},
-				ticket.ticketStatus.name // Show status name, no color overrides in JS
-			)
-		),
-		isOpen &&
-		React.createElement(
-			'div',
-			{ className: 'ticket-details' },
-			React.createElement('p', null, `Description: ${ticket.description}`),
-			ticket.attachment &&
-			React.createElement(
-				'a',
-				{
-					href: ticket.attachment.link.href,
-					target: '_blank',
-					rel: 'noopener noreferrer',
-					className: 'ticket-attachment'
-				},
-				'View Attachment'
-			),
-			ticket.relatedTickets && ticket.relatedTickets.length > 0 && (
-				React.createElement(
-					'div',
-					{ className: 'related-tickets' },
-					React.createElement('h4', null, 'Related Tickets'),
-					ticket.relatedTickets.map((related) =>
-						React.createElement(
-							'div',
-							{ className: 'related-ticket-item', key: related.id },
-							`ID: ${related.id} - ${related.subject}`
-						)
-					)
-				)
-			)
-		)
+const Ticket = React.memo(({ ticket, onToggle, isOpen }) => {
+	return (
+		<div className="ticket-card" onClick={() => onToggle(ticket.id)}>
+			<div className="ticket-header">
+				<h3 className="ticket-subject">{ticket.subject}</h3>
+				<span className={`ticket-status ${ticket.priority?.key}`}>
+					{ticket.ticketStatus.name}
+				</span>
+			</div>
+			{isOpen && (
+				<div className="ticket-details">
+					<p>Description: {ticket.description}</p>
+					{ticket.attachment && (
+						<a
+							href={ticket.attachment.link.href}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="ticket-attachment"
+						>
+							View Attachment
+						</a>
+					)}
+					{ticket.relatedTickets && ticket.relatedTickets.length > 0 && (
+						<div className="related-tickets">
+							<h4>Related Tickets</h4>
+							{ticket.relatedTickets.map((related) => (
+								<div className="related-ticket-item" key={related.id}>
+									ID: {related.id} - {related.subject}
+								</div>
+							))}
+						</div>
+					)}
+				</div>
+			)}
+		</div>
 	);
-}
+});
 
 // Main component to display tabs and tickets list
 function TicketsList() {
 	const [tickets, setTickets] = useState([]);
 	const [expandedTicket, setExpandedTicket] = useState(null);
-	const [selectedStatus, setSelectedStatus] = useState("open");
+	const [selectedStatus, setSelectedStatus] = useState('open');
+	const [isLoading, setIsLoading] = useState(true);
+	const [error, setError] = useState(null);
 
 	useEffect(() => {
-		getCurrentUserId().then((userId) => {
-			api(`o/c/j3y7tickets`)
-				.then((response) => response.json())
-				.then((data) => {
-					const userTickets = (data.items || []).filter(
-						(ticket) => ticket.creator?.id === userId
-					);
-					setTickets(userTickets || []);
-				})
-				.catch((error) => console.error("Error fetching tickets:", error));
-		});
+		const fetchTickets = async () => {
+			try {
+				setIsLoading(true);
+				const userId = await getCurrentUserId();
+				const response = await api('o/c/j3y7tickets');
+				const data = await response.json();
+				const userTickets = (data.items || []).filter(
+					(ticket) => ticket.creator?.id === userId
+				);
+				setTickets(userTickets || []);
+			} catch (error) {
+				console.error('Error fetching tickets:', error);
+				setError('Failed to load tickets.');
+			} finally {
+				setIsLoading(false);
+			}
+		};
+
+		fetchTickets();
 	}, []);
 
 	const toggleTicket = (ticketId) => {
 		setExpandedTicket(expandedTicket === ticketId ? null : ticketId);
 	};
 
-	const filteredTickets = tickets.filter((ticket) => ticket.ticketStatus.key === selectedStatus);
+	const filteredTickets = tickets.filter(
+		(ticket) => ticket.ticketStatus.key === selectedStatus
+	);
 
-	return React.createElement(
-		'div',
-		{ className: 'tickets-container' },
-		React.createElement(
-			'div',
-			{ className: 'tabs' },
-			["open", "inProgress"].map((status) =>
-				React.createElement(
-					'button',
-					{
-						key: status,
-						className: `tab-button ${selectedStatus === status ? 'active' : ''}`,
-						onClick: () => setSelectedStatus(status)
-					},
-					status.charAt(0).toUpperCase() + status.slice(1)
-				)
-			)
-		),
-		React.createElement(
-			'div',
-			{ className: 'tickets-list' },
-			filteredTickets.map((ticket) =>
-				React.createElement(Ticket, {
-					key: ticket.id,
-					ticket,
-					onToggle: toggleTicket,
-					isOpen: expandedTicket === ticket.id,
-				})
-			)
-		)
+	if (isLoading) {
+		return <div className="loading">Loading...</div>;
+	}
+
+	if (error) {
+		return <div className="error">{error}</div>;
+	}
+
+	if (filteredTickets.length === 0) {
+		return <div className="no-tickets">No tickets available for this status.</div>;
+	}
+
+	return (
+		<div className="tickets-container">
+			<div className="tabs">
+				{['open', 'inProgress'].map((status) => (
+					<button
+						key={status}
+						className={`tab-button ${selectedStatus === status ? 'active' : ''}`}
+						onClick={() => setSelectedStatus(status)}
+						aria-selected={selectedStatus === status}
+					>
+						{status.charAt(0).toUpperCase() + status.slice(1)}
+					</button>
+				))}
+			</div>
+			<div className="tickets-list">
+				{filteredTickets.map((ticket) => (
+					<Ticket
+						key={ticket.id}
+						ticket={ticket}
+						onToggle={toggleTicket}
+						isOpen={expandedTicket === ticket.id}
+					/>
+				))}
+			</div>
+		</div>
 	);
 }
 
 // Custom Element class
 class CustomElement extends HTMLElement {
 	connectedCallback() {
-		ReactDOM.render(React.createElement(TicketsList), this);
+		ReactDOM.render(<TicketsList />, this);
 	}
 
 	disconnectedCallback() {
