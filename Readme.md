@@ -1,6 +1,6 @@
-# liferay-course-objects Repository
+# liferay-course-client-extensions Repository
 
-This repository contains the Liferay Course Objects materials.
+This repository contains the Liferay Course Client Extension materials.
 
 The main branch is the starting point for the course, and the other branches have the results from the end of the module exercises.
 
@@ -8,7 +8,7 @@ The main branch is the starting point for the course, and the other branches hav
 
 - [Bundle Preparation](#bundle-preparation)
 - [Starting and Stopping the Bundle](#starting-and-stopping-the-bundle)
-- [Exercise 01: Adding Data Models for Clarity's Distributor Solution](#exercise-01-adding-data-models-for-claritys-distributor-solution)
+- 
 
 ## Bundle Preparation
 
@@ -60,7 +60,7 @@ By following these steps, you can effectively manage the lifecycle of your Lifer
 
 
 
-## Exercise 01: Adding Data Models for Clarity's Distributor Solution
+## Exercise XX: XXXXXXXXXXXXXXXX
 
 In this exercise, you will learn how to add data models to enhance the clarity of the distributor solution. This involves creating and configuring the necessary data structures to support the application's functionality. Follow the steps outlined in the course materials to complete this exercise successfully.
 
