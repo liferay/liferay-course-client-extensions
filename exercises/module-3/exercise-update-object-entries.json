@@ -1,6 +1,6 @@
 [
   {
-    "id":"56100",
+    "id": "56100",
     "externalReferenceCode": "a4eeacd8-6346-240d-e681-655f48c121f9",
     "keywords": [],
     "taxonomyCategoryIds": [],
@@ -29,7 +29,7 @@
     }
   },
   {
-    "id":"56102",
+    "id": "56102",
     "externalReferenceCode": "a5eeacd8-6346-240d-e681-655f48c121f9",
     "keywords": [],
     "taxonomyCategoryIds": [],
@@ -58,7 +58,7 @@
     }
   },
   {
-    "id":"56104",
+    "id": "56104",
     "externalReferenceCode": "a6eeacd8-6346-240d-e681-655f48c121f9",
     "keywords": [],
     "taxonomyCategoryIds": [],
@@ -87,7 +87,7 @@
     }
   },
   {
-    "id":"56106",
+    "id": "56106",
     "externalReferenceCode": "a7eeacd8-6346-240d-e681-655f48c121f9",
     "keywords": [],
     "taxonomyCategoryIds": [],
@@ -116,7 +116,7 @@
     }
   },
   {
-    "id":"56108",
+    "id": "56108",
     "externalReferenceCode": "a8eeacd8-6346-240d-e681-655f48c121f9",
     "keywords": [],
     "taxonomyCategoryIds": [],
@@ -145,7 +145,7 @@
     }
   },
   {
-    "id":"56110",
+    "id": "56110",
     "externalReferenceCode": "a9eeacd8-6346-240d-e681-655f48c121f9",
     "keywords": [],
     "taxonomyCategoryIds": [],
@@ -174,7 +174,7 @@
     }
   },
   {
-    "id":"56133",
+    "id": "56133",
     "externalReferenceCode": "d7a9c5f3-8123-4ea2-bb81-93032f1e97e0",
     "keywords": [],
     "taxonomyCategoryIds": [],
@@ -203,7 +203,7 @@
     }
   },
   {
-    "id":"56135",
+    "id": "56135",
     "externalReferenceCode": "83b45d22-2c78-44e9-8e2f-11602cb10f3d",
     "keywords": [],
     "taxonomyCategoryIds": [],
@@ -232,7 +232,7 @@
     }
   },
   {
-    "id":"56137",
+    "id": "56137",
     "externalReferenceCode": "f1a37b0a-4c88-4f22-99eb-66d53dcfc3c1",
     "keywords": [],
     "taxonomyCategoryIds": [],
@@ -261,7 +261,7 @@
     }
   },
   {
-    "id":"56139",
+    "id": "56139",
     "externalReferenceCode": "7ab5f620-b2e3-420b-96b5-2e10f7305f0c",
     "keywords": [],
     "taxonomyCategoryIds": [],
@@ -290,7 +290,7 @@
     }
   },
   {
-    "id":"55992",
+    "id": "56879",
     "externalReferenceCode": "TICKET_1",
     "keywords": [],
     "taxonomyCategoryIds": [],
@@ -298,7 +298,11 @@
     "priority": {
       "key": "minor",
       "name": "Minor"
-  },
+    },
+    "resolution": {
+      "key": "",
+      "name": ""
+    },
     "region": {
       "key": "lATAM",
       "name": "LATAM"
@@ -315,7 +319,7 @@
     }
   },
   {
-    "id": "56007",
+    "id": "56888",
     "externalReferenceCode": "TICKET_2",
     "keywords": [],
     "taxonomyCategoryIds": [],
@@ -323,6 +327,10 @@
     "priority": {
       "key": "critical",
       "name": "Critical"
+    },
+    "resolution": {
+      "key": "",
+      "name": ""
     },
     "region": {
       "key": "lATAM",
@@ -340,7 +348,7 @@
     }
   },
   {
-    "id": "56021",
+    "id": "56899",
     "externalReferenceCode": "TICKET_3",
     "keywords": [],
     "taxonomyCategoryIds": [],
@@ -349,11 +357,16 @@
       "key": "major",
       "name": "Major"
     },
+    "resolution": {
+      "key": "",
+      "name": ""
+    },
     "region": {
       "key": "lATAM",
       "name": "LATAM"
     },
     "subject": "How do I measure eyeglasses or sunglasses?",
+    "suggestions": "",
     "ticketStatus": {
       "key": "open",
       "name": "Open"
@@ -364,18 +377,25 @@
     }
   },
   {
-    "id": "56029",
+    "id": "56903",
     "externalReferenceCode": "TICKET_4",
+    "keywords": [],
+    "taxonomyCategoryIds": [],
     "description": "I need to understand what's the process for sending my glassess to a review as they have different problems in the side pieces.",
     "priority": {
       "key": "moderate",
       "name": "Moderate"
+    },
+    "resolution": {
+      "key": "",
+      "name": ""
     },
     "region": {
       "key": "aPAC",
       "name": "APAC"
     },
     "subject": "Asking for help related to my glasses, model 45TRGR",
+    "suggestions": "",
     "ticketStatus": {
       "key": "inProgress",
       "name": "In Progress"
@@ -386,18 +406,25 @@
     }
   },
   {
-    "id": "56031",
+    "id": "56905",
     "externalReferenceCode": "TICKET_5",
+    "keywords": [],
+    "taxonomyCategoryIds": [],
     "description": "I need to adquire another pair of glasses. For existing customers, are you thinking on creating a specific promotion?",
     "priority": {
       "key": "unassigned",
       "name": "Unassigned"
+    },
+    "resolution": {
+      "key": "",
+      "name": ""
     },
     "region": {
       "key": "aPAC",
       "name": "APAC"
     },
     "subject": "Is there any expected promo for this summer?",
+    "suggestions": "",
     "ticketStatus": {
       "key": "inProgress",
       "name": "In Progress"
@@ -408,18 +435,25 @@
     }
   },
   {
-    "id": "56033",
+    "id": "56907",
     "externalReferenceCode": "TICKET_6",
+    "keywords": [],
+    "taxonomyCategoryIds": [],
     "description": "I want to know what are the main recommended brands to clean my glasses, model 45TRGR",
     "priority": {
       "key": "unassigned",
       "name": "Unassigned"
+    },
+    "resolution": {
+      "key": "",
+      "name": ""
     },
     "region": {
       "key": "aPAC",
       "name": "APAC"
     },
     "subject": "Main cleaning products",
+    "suggestions": "",
     "ticketStatus": {
       "key": "open",
       "name": "Open"
