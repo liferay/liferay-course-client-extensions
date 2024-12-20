@@ -5,10 +5,10 @@
 			"containsHeaders": "true",
 			"createStrategy": "UPSERT",
 			"onErrorFail": "false",
-			"taskItemDelegateName": "C_J3Y7Ticket",
+			"taskItemDelegateName": "TICKET",
 			"updateStrategy": "UPDATE"
 		},
-		"taskItemDelegateName": "C_J3Y7Ticket"
+		"taskItemDelegateName": "TICKET"
 	},
 	"items": [
 		{

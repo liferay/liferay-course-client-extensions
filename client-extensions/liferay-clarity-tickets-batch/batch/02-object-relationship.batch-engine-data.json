@@ -6,19 +6,20 @@
 			"createStrategy": "INSERT",
 			"externalReferenceCode": "L_USER",
 			"onErrorFail": "false",
+			"taskItemDelegateName": "DEFAULT",
 			"updateStrategy": "UPDATE"
-		},
-		"taskItemDelegateName": "DEFAULT"
+		}
 	},
 	"items": [
 		{
 			"deletionType": "prevent",
 			"label": {
-				"en_US": "User to J3Y7 Ticket"
+				"en_US": "User to Ticket"
 			},
-			"name": "userToJ3Y7Ticket",
+			"name": "userToTicket",
+			"externalReferenceCode": "USER_TO_TICKET",
 			"objectDefinitionExternalReferenceCode1": "L_USER",
-			"objectDefinitionExternalReferenceCode2": "J3Y7_TICKET",
+			"objectDefinitionExternalReferenceCode2": "TICKET",
 			"type": "oneToMany"
 		}
 	]

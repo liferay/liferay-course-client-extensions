@@ -7,7 +7,7 @@
 			"onErrorFail": "false",
 			"updateStrategy": "UPDATE"
 		},
-		"taskItemDelegateName": "C_J3Y7Ticket"
+		"taskItemDelegateName": "TICKET"
 	},
 	"items": [
 		{
@@ -17,11 +17,11 @@
 			"enableCategorization": true,
 			"enableComments": true,
 			"enableObjectEntryHistory": true,
-			"externalReferenceCode": "J3Y7_TICKET",
+			"externalReferenceCode": "TICKET",
 			"label": {
-				"en_US": "J3Y7 Ticket"
+				"en_US": "Ticket"
 			},
-			"name": "J3Y7Ticket",
+			"name": "Ticket",
 			"objectActions": [
 				{
 					"active": true,
@@ -35,14 +35,14 @@
 					"objectActionExecutorKey": "update-object-entry",
 					"objectActionTriggerKey": "standalone",
 					"parameters": {
-						"objectDefinitionExternalReferenceCode": "J3Y7_TICKET",
+						"objectDefinitionExternalReferenceCode": "TICKET",
 						"predefinedValues": [
 							{
 								"inputAsValue": false,
 								"label": {
-									"en_US": "User to J3Y7 Ticket"
+									"en_US": "User to Ticket"
 								},
-								"name": "r_userToJ3Y7Ticket_userId",
+								"name": "r_userToTicket_userId",
 								"value": "currentUserId"
 							}
 						]
@@ -138,7 +138,7 @@
 					"label": {
 						"en_US": "Priority"
 					},
-					"listTypeDefinitionExternalReferenceCode": "J3Y7_PRIORITIES",
+					"listTypeDefinitionExternalReferenceCode": "PRIORITIES",
 					"name": "priority",
 					"objectFieldSettings": [
 					],
@@ -158,7 +158,7 @@
 					"label": {
 						"en_US": "Region"
 					},
-					"listTypeDefinitionExternalReferenceCode": "J3Y7_REGIONS",
+					"listTypeDefinitionExternalReferenceCode": "REGIONS",
 					"name": "region",
 					"objectFieldSettings": [
 					],
@@ -177,7 +177,7 @@
 					"label": {
 						"en_US": "Resolution"
 					},
-					"listTypeDefinitionExternalReferenceCode": "J3Y7_RESOLUTIONS",
+					"listTypeDefinitionExternalReferenceCode": "RESOLUTIONS",
 					"name": "resolution",
 					"objectFieldSettings": [
 					],
@@ -233,7 +233,7 @@
 					"label": {
 						"en_US": "Ticket Status"
 					},
-					"listTypeDefinitionExternalReferenceCode": "J3Y7_STATUSES",
+					"listTypeDefinitionExternalReferenceCode": "STATUSES",
 					"name": "ticketStatus",
 					"objectFieldSettings": [
 						{
@@ -443,7 +443,7 @@
 					"label": {
 						"en_US": "Type"
 					},
-					"listTypeDefinitionExternalReferenceCode": "J3Y7_TYPES",
+					"listTypeDefinitionExternalReferenceCode": "TYPES",
 					"name": "type",
 					"objectFieldSettings": [
 					],
@@ -459,11 +459,11 @@
 				{
 					"deletionType": "prevent",
 					"label": {
-						"en_US": "J3Y7 Ticket to J3Y7 Tickets"
+						"en_US": "Ticket to Tickets"
 					},
-					"name": "j3y7TicketToJ3Y7Tickets",
-					"objectDefinitionExternalReferenceCode1": "J3Y7_TICKET",
-					"objectDefinitionExternalReferenceCode2": "J3Y7_TICKET",
+					"name": "ticketToTickets",
+					"objectDefinitionExternalReferenceCode1": "TICKET",
+					"objectDefinitionExternalReferenceCode2": "TICKET",
 					"type": "oneToMany"
 				}
 			],
@@ -474,10 +474,10 @@
 			"panelCategoryKey": "control_panel.object",
 			"parameterRequired": false,
 			"pluralLabel": {
-				"en_US": "J3Y7 Tickets"
+				"en_US": "Tickets"
 			},
 			"portlet": true,
-			"restContextPath": "/o/c/j3y7tickets",
+			"restContextPath": "/o/c/tickets",
 			"scope": "company",
 			"status": {
 				"code": 0,
