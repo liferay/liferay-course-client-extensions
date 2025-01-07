@@ -46,11 +46,11 @@ public class ObjectActionTicketRestController extends BaseRestController {
 
 		JSONObject jsonObject = new JSONObject(json);
 
-		JSONObject objectEntryDTOJ3Y7TicketJSONObject =
-			jsonObject.getJSONObject("objectEntryDTOJ3Y7Ticket");
+		JSONObject objectEntryDTOTicketJSONObject =
+			jsonObject.getJSONObject("objectEntryDTOTicket");
 
 		JSONObject propertiesJSONObject =
-			objectEntryDTOJ3Y7TicketJSONObject.getJSONObject("properties");
+			objectEntryDTOTicketJSONObject.getJSONObject("properties");
 
 		propertiesJSONObject.put(
 			"suggestions",
@@ -71,8 +71,8 @@ public class ObjectActionTicketRestController extends BaseRestController {
 			_lxcDXPServerProtocol + "://" + _lxcDXPMainDomain
 		).patch(
 		).uri(
-			"/o/c/j3y7tickets/" +
-				objectEntryDTOJ3Y7TicketJSONObject.getString("id")
+			"/o/c/tickets/" +
+				objectEntryDTOTicketJSONObject.getString("id")
 		).accept(
 			MediaType.APPLICATION_JSON
 		).contentType(
