@@ -72,7 +72,7 @@ function TicketsList() {
 			try {
 				setIsLoading(true);
 				const userId = await getCurrentUserId();
-				const response = await api('o/c/j3y7tickets');
+				const response = await api('o/c/tickets');
 				const data = await response.json();
 				const userTickets = (data.items || []).filter(
 					(ticket) => ticket.creator?.id === userId
@@ -148,7 +148,7 @@ class CustomElement extends HTMLElement {
 	}
 }
 
-const ELEMENT_NAME = 'j3y7-tickets';
+const ELEMENT_NAME = 'my-tickets';
 
 if (!customElements.get(ELEMENT_NAME)) {
 	customElements.define(ELEMENT_NAME, CustomElement);
