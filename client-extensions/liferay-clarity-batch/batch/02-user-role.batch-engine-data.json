@@ -17,10 +17,25 @@
 			"description_i18n": {
 				"en-US": "Business Development Managers are responsible for the final review and approval of distributor applications."
 			},
-			"externalReferenceCode": "D4B8_BUSINESS_DEVELOPMENT_MANAGER",
-			"name": "D4B8 Business Development Manager",
+			"externalReferenceCode": "Business Development Manager",
+			"name": "Business Development Manager",
 			"name_i18n": {
-				"en-US": "D4B8 Business Development Manager"
+				"en-US": "Business Development Manager"
+			},
+			"roleType": "regular"
+		},
+		{
+			"availableLanguages": [
+				"en-US"
+			],
+			"description": "Business Development Specialists are responsible for identifying and assessing growth opportunities for Clarity. This includes evaluating distributor applications, filling out evaluations, and making recommendations based on whether the applicant aligns with the company's goals and have the distribution capacity to further Clarity's market penetration goals.",
+			"description_i18n": {
+				"en-US": "Business Development Specialists are responsible for identifying and assessing growth opportunities for Clarity. This includes evaluating distributor applications, filling out evaluations, and making recommendations based on whether the applicant aligns with the company's goals and have the distribution capacity to further Clarity's market penetration goals."
+			},
+			"externalReferenceCode": "Business Development Specialist",
+			"name": "Business Development Specialist",
+			"name_i18n": {
+				"en-US": "Business Development Specialist"
 			},
 			"roleType": "regular"
 		}
