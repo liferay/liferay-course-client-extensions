@@ -1,14 +1,12 @@
-# liferay-course-client-extensions Repository
+# Mastering Backend Liferay Client Extensions
 
-This repository contains the Liferay Course Client Extension materials.
-
-The main branch is the starting point for the course, and the other branches have the results from the end of the module exercises.
+This repository contains the Mastering Backend Liferay Client Extensions course materials.
 
 ## Table of Contents
 
 - [Bundle Preparation](#bundle-preparation)
 - [Starting and Stopping the Bundle](#starting-and-stopping-the-bundle)
-- 
+ 
 
 ## Bundle Preparation
 
@@ -56,12 +54,3 @@ Once you have prepared your Liferay bundle, you can start and stop it using the 
 
 By following these steps, you can effectively manage the lifecycle of your Liferay bundle, ensuring a smooth development and testing process.
 
-
-
-
-
-## Exercise XX: XXXXXXXXXXXXXXXX
-
-In this exercise, you will learn how to add data models to enhance the clarity of the distributor solution. This involves creating and configuring the necessary data structures to support the application's functionality. Follow the steps outlined in the course materials to complete this exercise successfully.
-
-The solution for this exercise is under the `exercise-01` branch.
